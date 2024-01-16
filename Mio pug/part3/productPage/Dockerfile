@@ -1,6 +1,6 @@
 FROM python:3.8
 
-ENV GROUPO_NUMERO 46
+ENV GROUP_NUMBER 46
 
 COPY docker.py .
 
