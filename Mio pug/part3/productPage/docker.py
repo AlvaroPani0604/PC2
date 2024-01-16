@@ -31,7 +31,7 @@ subprocess.run(["apt-get", "install", "python3-pip"])
 subprocess.run(["pip3", "install", '-r', './practica_creativa2/bookinfo/src/productpage/requirements.txt'])
 
 #Extraemos la variable de entorno (definida en el Dockerfile) y guardarla aqui
-title = os.environ.get('GROUPO_NUMERO')
+title = os.environ.get('GROUP_NUMBER')
 
 #Modificamos productpage.html para cambiar el titulo de la app por la variable de entorno
 remp('templates/productpage.html', 'Simple Bookstore App', title)
