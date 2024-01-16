@@ -3,12 +3,6 @@
 import os, sys, subprocess, yaml
 from subprocess import call, run
 
-
-subprocess.run(["sudo", "apt-get" ,"install","git", "-y"])
-subprocess.run(["sudo", "apt" ,"update"])
-subprocess.run(["sudo", "apt" ,"upgrade", "-y"])
-subprocess.run(["sudo", "apt" ,"install", "docker-compose", "-y"])
-
 def dcompose_ver(fi, version):
     #diccionaro para guardar las variables de entorno segun la version
     env_vars = {
