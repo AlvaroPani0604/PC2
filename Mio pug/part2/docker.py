@@ -33,7 +33,7 @@ subprocess.run(["apt-get", "install", "python3-pip"])
 subprocess.run(["pip3", "install", '-r', './practica_creativa2/bookinfo/src/productpage/requirements.txt'])
 
 #Extraemos la variable de entorno y guardarla aqui
-title = os.environ.get('GRUPO_NUMERO')
+title = os.environ.get('GROUPO_NUMERO')
 
 #Modificamos productpage.html para cambiar el titulo de la app por la variable de entorno
 remp('templates/productpage.html', 'Simple Bookstore App', title)
